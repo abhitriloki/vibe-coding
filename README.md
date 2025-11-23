@@ -54,7 +54,50 @@ A production-ready web application that enables users to build websites using AI
 - MongoDB (local or MongoDB Atlas)
 - API keys from OpenRouter, OpenAI, or Anthropic
 
-### Installation
+### Quick Installation (Automated)
+
+#### Windows (Recommended)
+
+**Option 1: One-Click Start**
+```
+1. Double-click quick-start.bat
+2. Choose option 1 or 2 from the menu
+3. Application will start automatically!
+```
+
+**Option 2: Step-by-Step**
+```
+1. Double-click setup.bat (first time only)
+2. Double-click start.bat (to start)
+3. Double-click stop.bat (to stop)
+```
+
+#### Linux/Mac
+
+```bash
+# First time setup
+chmod +x setup.sh start.sh stop.sh
+./setup.sh
+
+# Start application
+./start.sh
+
+# Stop application
+./stop.sh
+```
+
+**That's it!** The scripts will automatically:
+- ✅ Install all dependencies
+- ✅ Create configuration files
+- ✅ Start MongoDB (if installed)
+- ✅ Start backend and frontend servers
+- ✅ Open your browser
+
+📖 For detailed installation instructions and troubleshooting, see [INSTALL.md](INSTALL.md)
+
+### Manual Installation
+
+If you prefer to install manually:
 
 1. Clone the repository:
 ```bash
@@ -142,7 +185,15 @@ ai-coder/
 │   │   ├── services/    # API services
 │   │   └── styles/      # CSS styles
 │   └── vite.config.js   # Vite configuration
-└── README.md
+├── setup.bat           # Windows setup script
+├── start.bat           # Windows start script
+├── stop.bat            # Windows stop script
+├── quick-start.bat     # Windows one-click script
+├── setup.sh            # Linux/Mac setup script
+├── start.sh            # Linux/Mac start script
+├── stop.sh             # Linux/Mac stop script
+├── INSTALL.md          # Detailed installation guide
+└── README.md           # Main documentation
 ```
 
 ## API Endpoints
